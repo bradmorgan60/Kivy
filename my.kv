@@ -1,0 +1,43 @@
+<MyGrid>:
+
+    first_name: first_name
+    last_name: last_name
+    prog_lang: prog_lang
+
+    GridLayout:
+        cols:1
+        size: root.width, root.height
+
+        GridLayout:
+            cols:2
+
+            Label:
+                text: "First Name: "
+
+            TextInput:
+                id: first_name
+                multiline: False
+
+            Label:
+                text: "Last Name: "
+
+            TextInput:
+                id: last_name
+                multiline: False
+
+            Label:
+                text: "Programming Language: "
+
+            TextInput:
+                id: prog_lang
+                multiline: False
+
+        
+        Button:
+            text:"Submit"
+            on_press: root.btn()
+
+
+
+
+            
